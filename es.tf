@@ -45,8 +45,8 @@ resource "aws_elasticsearch_domain" "es" {
 
   ebs_options {
     ebs_enabled = true
-    volume_type = "gp2"
-    volume_size = "${var.account == "prod" ? "300" : "20" }"
+    volume_type = "${var.volume_type}"
+    volume_size = "${var.volume_size}"
   }
 
   encrypt_at_rest {

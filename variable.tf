@@ -23,6 +23,14 @@ variable "instance_type" {
   default = "m4.xlarge.elasticsearch"
 }
 
+variable "volume_size" {
+  default = "300"
+}
+
+variable "volume_type" {
+  default = "gp2"
+}
+
 variable "instance_count" {
   default = "2"
 }
