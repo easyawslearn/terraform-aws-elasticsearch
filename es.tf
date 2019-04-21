@@ -36,7 +36,7 @@ resource "aws_elasticsearch_domain_policy" "es_policy" {
 
 resource "aws_elasticsearch_domain" "es" {
   domain_name           = "${lower(var.app_name)}-es"
-  elasticsearch_version = 6.5
+  elasticsearch_version = "${var.es_version}"
 
   advanced_options {
     "rest.action.multi.allow_explicit_index" = "true"
