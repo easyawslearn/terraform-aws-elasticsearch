@@ -69,7 +69,7 @@ resource "aws_elasticsearch_domain" "es" {
   tags {
     Application = "${var.app_name}"
     Environment = "${var.account}"
-    Version     = "6.5"
+    Version     = "${var.es_version}"
   }
 
   vpc_options {

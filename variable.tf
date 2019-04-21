@@ -39,7 +39,11 @@ variable "owner" {
 }
 
 variable "account" {
-  default = "dev"
+  default = "test"
+}
+
+variable "es_version" {
+  default = "6.5"
 }
 
 variable "automated_snapshot_start_hour" {
