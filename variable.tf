@@ -4,11 +4,11 @@ variable "region" {
 }
 
 variable "vpc_filter_name" {
-  default = "-VPC/vpc"
+  default = "myvpc"
 }
 
 variable "vpc" {
-  default = "CloudStation"
+  default = "Test-vpc"
 }
 
 variable "is_encrypt" {
